@@ -7,11 +7,11 @@ public class AnimalFactory {
         switch(tipAnimal) {
             
             case Elefant:
-                return Elefant(nume, nrExemplare);
+                return new Elefant(nume, nrExemplare);
             case Leu:
-                return Leu(nume, nrExemplare);
+                return new Leu(nume, nrExemplare);
             case Pinguin:
-                return Pinguin(nume, nrExemplare);
+                return new Pinguin(nume, nrExemplare);
             default:
                 throw IllegalArgumentException("Tip animal inexistent: " + tipAnimal);
             
