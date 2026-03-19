@@ -11,7 +11,11 @@ public class Elefant extends Animal {
     @Override
     public void afiseazaInfo() {
         
-        System.out.println("Nume animal " + nume + "cu un numar de exemplare de " + nrExemplare);
+        StringBuilder sb = new StringBuilder();
+        sb.append("Nume animal: ").append(super.nume);
+        sb.append("Nr exemplare: ").append(super.nrExemplare);
+        
+        System.out.println(sb.toString());
         
     }
     
