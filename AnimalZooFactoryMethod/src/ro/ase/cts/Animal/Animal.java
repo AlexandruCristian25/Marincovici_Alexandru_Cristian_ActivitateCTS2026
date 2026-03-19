@@ -12,6 +12,7 @@ public class Animal {
         
     }
     
-    public static void afiseazaInfo();
+    public abstract void afiseazaInfo();
     
+
 }
