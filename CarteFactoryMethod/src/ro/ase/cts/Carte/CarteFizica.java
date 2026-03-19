@@ -11,7 +11,11 @@ public class CarteFizica {
     @Override
     public void afiseazaInfo() {
         
-        System.out.println("Cartea de fizica cu autorul " + autor + " are " + nrPagini + " pagini");
+        StringBuilder sb = new StringBuilder();
+        sb.append("Auror: ").append(super.autor);
+        sb.append("Nr pagini: ").append(super.nrPagini);
+        
+        System.out.println(sb.toString());
         
     }
     
