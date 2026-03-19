@@ -4,16 +4,12 @@ public class AnimalFactory {
     
     public static Animal afiseazaAnimal(TipAnimal tipAnimal, String nume, int nrExemplare) {
         
-        switch(tipAnimal) {
+        return switch(tipAnimal) {
             
-            case Elefant:
-                return new Elefant(nume, nrExemplare);
-            case Leu:
-                return new Leu(nume, nrExemplare);
-            case Pinguin:
-                return new Pinguin(nume, nrExemplare);
-            default:
-                throw IllegalArgumentException("Tip animal inexistent: " + tipAnimal);
+            case -> Elefant = new Englez(nume, nrExemplare);
+            case -> Leu = new Francez(nume, nrExemplare);
+            case -> Pinguin = new Japonez(nume, nrExemplare);
+            default -> throw new IllegalArgumentException("Tip animal inexistent: " + tipAnimal);
             
         }
         
