@@ -12,6 +12,6 @@ public class Carte {
         
     }
     
-    public static void afiseazaInfo();
+    public abstract void afiseazaInfo();
     
 }
