@@ -4,18 +4,16 @@ public class CarteFactory {
     
     public static Carte creeazaCarte(TipCarte tipCarte, String autor, int nrPagini) {
         
-        switch(tipCarte) {
+        return switch(tipCarte) {
             
-            case CarteStiinta:
-                return CarteStiinta(autor, nrPagini);
-            case CarteFizica:
-                return CarteFizica(autor, nrPagini);
-            case CarteMatematica:
-                return CarteMatematica(autor, nrPagini);
-            default:
-                throw IllegalArgumentException("Tip carte inexistenta: " + tipCarte);
+            case -> CarteFizica = new CarteFizica(autor, nrPagini);
+            case -> CarteMatematica = new CarteMatematica(autor, nrPagini);
+            case -> CarteStiinta = new CarteStiinta(autor, nrPagini);
+            default -> throw new IllegalArgumentException("Tip carte inexistenta: " + tipCarte);
             
         }
+        
+        return null;
         
     }
     
