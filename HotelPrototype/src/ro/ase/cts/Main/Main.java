@@ -1,4 +1,6 @@
-package com.example;
+package ro.ase.cts.Main;
+
+import ro.ase.cts.Hotel.Rezervare;
 
 public class Main {
     public static void main(String[] args) {
