@@ -2,8 +2,8 @@ package ro.ase.cts.Biblioteca;
 
 public class Biblioteca {
     
-    private String locatie;
-    private int nrCarti;
+    private static String locatie;
+    private static int nrCarti;
     private static Biblioteca instance = null;
     
     private Biblioteca(String locatie, int nrCarti) {
@@ -15,31 +15,31 @@ public class Biblioteca {
     
     public String getLocatie() {
         
-        this.locatie = locatie;
+        return this.locatie;
         
     }
     
     public void setLocatie(String locatie) {
         
-        this.locatie = locatieNoua;
+        this.locatie = locatie;
         
     }
     
     public int getNrCarti() {
         
-        this.nrCarti = nrCarti;
+        return this.nrCarti;
         
     }
     
     public void setNrCarti(int nrCarti) {
         
-        this.nrCarti = nrCartiNoi;
+        this.nrCarti = nrCarti;
         
     }
     
     public static synchronized Biblioteca getInstance() {
         
-        if(instance != null) {
+        if(instance == null) {
             
             instance = new Biblioteca(locatie, nrCarti);
             
