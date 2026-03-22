@@ -1,6 +1,6 @@
 package ro.ase.cts.Main;
 
-import ro.ase.cts.RezervareProdus;
+import ro.ase.cts.Produs.RezervareProdus;
 
 public class Main {
     public static void main(String[] args) {
@@ -14,15 +14,13 @@ public class Main {
             
         } catch(CloneNotSupportedException e) {
             
-            return new Runtime Exception(e);
-            
         }
-        
+
+        rezervare2.setTipProdus("Electronice");
+
+        System.out.println(rezervare.toString());
+        System.out.println(rezervare2.toString());
+
     }
-    
-    rezervare2.setTipProdus("Electronice");
-    
-    System.out.println(rezervare.toString());
-    System.out.println(rezervare2.toString());
     
 }
