@@ -2,8 +2,8 @@ package ro.ase.cts.Avion;
 
 public abstract class Avion {
     
-    private String companie;
-    private int nrAngajati;
+    protected String companie;
+    protected int nrAngajati;
     
     private Avion(String companie, int nrAngajati) {
         
