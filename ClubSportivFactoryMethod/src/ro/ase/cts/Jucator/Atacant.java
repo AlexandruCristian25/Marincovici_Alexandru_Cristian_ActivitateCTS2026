@@ -3,16 +3,20 @@ package ro.ase.cts.Jucator;
 public class Atacant extends Jucator {
     
     public Atacant(String nume, int nrMeciuri) {
-        
-        this.nume = nume;
-        this.nrMeciuri = nrMeciuri;
+
+        super(nume, nrMeciuri);
+
         
     } 
     
     @Override
     public void afiseazaInfo() {
-        
-        System.out.println("Atacantul " + nume + " are in palmares " + nrMeciuri + " meciuri");
+
+        StringBuilder sb = new StringBuilder();
+        sb.append("Nume : ").append(nume);
+        sb.append("Nr meciuri: ").append(nrMeciuri);
+
+        System.out.println(sb.toString());
         
     }
     

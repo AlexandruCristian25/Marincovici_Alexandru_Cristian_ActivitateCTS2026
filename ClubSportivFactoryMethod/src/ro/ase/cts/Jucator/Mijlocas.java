@@ -4,14 +4,18 @@ public class Mijlocas extends Jucator {
     
     public Mijlocas(String nume, int nrMeciuri) {
         
-        super(nume nrMeciuri);
+        super(nume, nrMeciuri);
         
     }
     
     @Override
     public void afiseazaInfo() {
-        
-        System.out.println("Mijlocasul " + nume + " are in palmares " + nrMeciuri + " meciuri");
+
+        StringBuilder sb = new StringBuilder();
+        sb.append("Nume : ").append(nume);
+        sb.append("Nr meciuri: ").append(nrMeciuri);
+
+        System.out.println(sb.toString());
         
     }
     

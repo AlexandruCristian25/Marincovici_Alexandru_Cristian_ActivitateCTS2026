@@ -10,8 +10,12 @@ public class Portar extends Jucator {
     
     @Override
     public void afiseazaInfo() {
-        
-        System.out.println("Portarul " + nume + " are in palmares " + nrMeciuri + " meciuri");
+
+        StringBuilder sb = new StringBuilder();
+        sb.append("Nume : ").append(nume);
+        sb.append("Nr meciuri: ").append(nrMeciuri);
+
+        System.out.println(sb.toString());
         
     }
     
