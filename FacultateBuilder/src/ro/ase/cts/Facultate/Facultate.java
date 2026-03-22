@@ -19,7 +19,7 @@ public class Facultate {
         private String nume;
         private String locatie;
         private String specializare;
-        
+
         @Override
         public BuilderAbstract setNume(String nume) {
             
@@ -43,12 +43,12 @@ public class Facultate {
             return this;
             
         }
-        
+
         @Override
         public Facultate build() {
-            
+
             return new Facultate(nume, locatie, specializare);
-            
+
         }
         
     } 
@@ -60,7 +60,7 @@ public class Facultate {
         sb.append("nume='").append(nume).append('\'');
         sb.append(", locatie='").append(locatie).append('\'');
         sb.append(", specializare='").append(specializare);
-        sb.append('{');
+        sb.append('}');
         
         return sb.toString();
         
