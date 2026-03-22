@@ -1,6 +1,6 @@
 package ro.ase.cts.Floare;
 
-public class RezervareFloare implements Prototype {
+public class RezervareFloare implements Cloneable {
     
     private String nume;
     private String zi;
@@ -29,12 +29,12 @@ public class RezervareFloare implements Prototype {
     }
     
     @Override
-    public Static toString() {
+    public String toString() {
         
         final StringBuilder sb = new StringBuilder("RezervareFloare{");
         sb.append("nume='").append(nume).append('\'');
         sb.append(", zi='").append(zi);
-        sb.append('{');
+        sb.append('}');
         
         return sb.toString();
         
@@ -45,5 +45,10 @@ public class RezervareFloare implements Prototype {
         return (RezervareFloare) super.clone();
         
     }
-    
+
+    public void setZi(String vineri) {
+
+        this.zi = zi;
+
+    }
 }
