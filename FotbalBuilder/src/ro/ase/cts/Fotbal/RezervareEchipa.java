@@ -12,7 +12,7 @@ public class RezervareEchipa {
         
     }
     
-    public static class RezervareEchipa implements BuilderAbstract {
+    public static class RezervareEchipa1 implements BuilderAbstract {
         
         private String numeEchipa;
         private int nrJucatori;
@@ -53,5 +53,12 @@ public class RezervareEchipa {
         return sb.toString();
         
     }
-    
+
+    public static class Builder {
+        public BuilderAbstract setNumeEchipa(String s) {
+
+            return null;
+
+        }
+    }
 }
