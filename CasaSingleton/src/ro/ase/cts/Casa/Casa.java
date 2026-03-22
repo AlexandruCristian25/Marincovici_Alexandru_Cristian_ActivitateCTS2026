@@ -6,7 +6,7 @@ public class Casa {
     private float suprafata;
     private static Casa instance = null;
     
-    private Casa(String locatie, float pret) {
+    public Casa(String locatie, float pret) {
         
         this.locatie = locatie;
         this.suprafata = suprafata;
