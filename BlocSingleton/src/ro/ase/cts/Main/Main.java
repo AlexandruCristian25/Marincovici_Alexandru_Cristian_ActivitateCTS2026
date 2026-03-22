@@ -10,7 +10,7 @@ public class Main {
         Bloc b2 = Bloc.getInstance();
         
         b1.setNumeBloc("Nume bloc: M2/4");
-        b1.setNrApartamente("Nr apartamente: 78");
+        b1.setNrApartamente(78);
         
         System.out.println(b1.getNumeBloc());
         System.out.println(b1.getNrApartamente());
