@@ -1,3 +1,5 @@
+package ro.ase.cts.Hotel;
+
 public class Rezervare {
     
     private String nume;
@@ -29,11 +31,7 @@ public class Rezervare {
             
         }
         
-        if(this.nrPersoane.length() > 0) {
-            
-            this.nrPersoane = nrPersoane;
-            
-        } else {
+        if(this.nrPersoane > 0) {
             
             this.nrPersoane = nrPersoane;
             
@@ -53,7 +51,7 @@ public class Rezervare {
         StringBuilder sb = new StringBuilder("Rezervare{");
         sb.append("nume='").append(nume).append('\'');
         sb.append(", email='").append(email).append('\'');
-        sb.append(", nrTelefon='").append(nrTelefon);
+        sb.append(", nrTelefon='").append(nrPersoane);
         sb.append('{');
         
         return sb.toString();
