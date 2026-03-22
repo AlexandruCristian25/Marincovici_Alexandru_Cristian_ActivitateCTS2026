@@ -1,36 +1,17 @@
 package ro.ase.cts.Film;
 
 public class FilmFactory {
-    
-    private static FilmFactory instance = null;
-    
-    public static synchronized FilmFactory getInstance() {
-        
-        if(instance != null) {
-            
-            instance = new FilmFactory();
-            
-        }
-        
-        return instance;
-        
-    }
-    
-    private FilmFactory() {
-    }
-    
-    public Film getFilm(TipFilm tipFilm, int nrActori) {
-        
-        Film film = null;
-        
+
+    public static Film adaugaFilm(TipFilm tipFilm, int nrActori, double pretBilet) throws IllegalAccessException {
+
         return switch(tipFilm) {
             
-            case FilmAventura -> new FilmAventura(nrActori);
-            case FilmActiune -> new FilmAventura(nrActori);
-            case FilmComedie -> new FilmComedie(nrActori);
-            default->null;
+            case FilmAventura -> new FilmAventura(nrActori, pretBilet);
+            case FilmActiune -> new FilmAventura(nrActori, pretBilet);
+            case FilmComedie -> new FilmComedie(nrActori, pretBilet);
+            default -> throw new IllegalAccessException("Tip film inexistent: " + tipFilm);
             
-        }
+        };
         
     }
     

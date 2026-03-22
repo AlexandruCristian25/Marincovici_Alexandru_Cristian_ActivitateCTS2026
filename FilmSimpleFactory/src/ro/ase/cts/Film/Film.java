@@ -1,13 +1,17 @@
 package ro.ase.cts.Film;
 
-public class Film {
+public abstract class Film {
+
+    protected int nrActori;
+    protected double pretBilet;
     
-    private int nrActori;
-    
-    private Film(int nrActori) {
+    Film(int nrActori, double pretBilet) {
         
         this.nrActori = nrActori;
+        this.pretBilet = pretBilet;
         
     }
+
+    public abstract void afiseazaInfo();
     
 }
