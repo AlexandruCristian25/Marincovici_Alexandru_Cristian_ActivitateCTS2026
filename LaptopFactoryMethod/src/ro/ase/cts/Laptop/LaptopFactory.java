@@ -4,15 +4,11 @@ public class LaptopFactory {
 
     public static Laptop creareLaptop(TipLaptop tip, String model, int ram) {
 
-        switch(tip) {
-            case GAMING:
-                return new LaptopGaming(model, ram);
-            case OFFICE:
-                return new LaptopOffice(model, ram);
-            case HOME:
-                return new LaptopHome(model, ram);
-            default:
-                throw new IllegalArgumentException("Tip laptop necunoscut");
-        }
+        return switch(tip) {
+            case GAMING -> new LaptopGaming(model, ram);
+            case OFFICE -> new LaptopOffice(model, ram);
+            case HOME -> new LaptopHome(model, ram);
+            default -> throw new IllegalArgumentException("Tip laptop necunoscut" + tip);
+        };
     }
 }
