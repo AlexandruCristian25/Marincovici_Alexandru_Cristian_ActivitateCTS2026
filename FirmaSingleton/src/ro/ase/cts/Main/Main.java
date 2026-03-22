@@ -8,11 +8,11 @@ public class Main {
         Firma f1 = Firma.getInstance();
         Firma f2 = Firma.getInstance();
         
-        f1.setNumeFirma("Nume: Companie1");
-        f1.setNrAngajati("Nr angajati: 90");
+        f1.setNumeCompanie("Nume: Companie1");
+        f1.setNrAngajati(90);
         f1.setLocatie("Locatie: Locatie1");
         
-        System.out.println(f1.getNumeFirma());
+        System.out.println(f1.getNumeCompanie());
         System.out.println(f1.getNrAngajati());
         System.out.println(f1.getLocatie());
         
