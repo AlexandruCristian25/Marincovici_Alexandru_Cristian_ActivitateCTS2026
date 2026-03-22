@@ -14,7 +14,7 @@ public class RezervareLoc {
         
     }
     
-    public static class RezervareLoc implements BuilderAbstract {
+    public static class RezervareLoc1 implements BuilderAbstract {
         
         private String locatie;
         private double pretBilet;
@@ -50,7 +50,10 @@ public class RezervareLoc {
             return new RezervareLoc(locatie, pretBilet, nrLoc);
             
         }
-        
+
+        public BuilderAbstract Builder() {
+            return null;
+        }
     }
     
     @Override
