@@ -1,6 +1,6 @@
 package ro.ase.cts.Restaurant;
 
-public class RezervareRestaurant {
+public class RezervareRestaurant implements Cloneable{
     
     private String nume;
     private int nrPersoane;
@@ -21,17 +21,17 @@ public class RezervareRestaurant {
             
         }
         
-        if(nrPersoane.length() > 1) {
+        if(nrPersoane > 1) {
             
             this.nrPersoane = nrPersoane;
             
         } else {
             
-            this.nrPersoane = "0";
+            this.nrPersoane = 0;
             
         }
         
-        if(nrMasa.length() == 0) {
+        if(nrMasa == 0) {
             
             this.nrMasa = nrMasa;
             
