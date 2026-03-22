@@ -2,41 +2,33 @@ package ro.ase.cts.Cuptor;
 
 public class Cuptor {
     
-    private int timpGatire;
-    private float gradeGatire;
+    private static int timpGatire;
+    private static float gradeGatire;
     private static Cuptor instance = null;
     
-    private Cuptor(int timpGatire, float gradGatire) {
+    public Cuptor(int timpGatire, float gradeGatire) {
         
         this.timpGatire = timpGatire;
-        this.gradGatire = gradGatire;
+        this.gradeGatire = gradeGatire;
         
     }
-    
+
     public int getTimpGatire() {
-        
-        this.timpGatire = timpGatire;
-        
+        return this.timpGatire;
     }
-    
+
     public void setTimpGatire(int timpGatire) {
-        
-        this.timpGatire = timpGatireNou;
-        
+        this.timpGatire = timpGatire;
     }
-    
-    public floar getGradeGatire() {
-        
-        this.gradGatire = gradGatire;
-        
+
+    public float getGradeGatire() {
+        return this.gradeGatire;
     }
-    
-    public void setGradGatire(int gradGatire) {
-        
-        this.gradGatire = gradGatireNou;
-        
+
+    public void setGradeGatire(float gradeGatire) {
+        this.gradeGatire = gradeGatire;
     }
-    
+
     public static synchronized Cuptor getInstance() {
         
         if(instance != null) {
