@@ -1,6 +1,6 @@
 package ro.ase.cts.Main;
 
-import ro.ase.cts.RezervareRestaurant.RezervareRestaurant;
+import ro.ase.cts.Restaurant.RezervareRestaurant;
 
 public class Main {
     public static void main(String[] args) {
@@ -13,8 +13,6 @@ public class Main {
             rezervare2 = rezervare.copiaza();
             
         } catch(CloneNotSupportedException e) {
-            
-            return new RuntimeException(e);
             
         }
         
