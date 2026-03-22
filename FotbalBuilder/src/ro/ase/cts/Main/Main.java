@@ -1,6 +1,6 @@
 package ro.ase.cts.Main;
 
-import ro.ase.cts.RezervareEchipa.RezervareEchipa;
+import ro.ase.cts.Fotbal.RezervareEchipa;
 
 public class Main {
     public static void main(String[] args) {
