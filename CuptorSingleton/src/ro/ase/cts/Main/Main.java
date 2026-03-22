@@ -9,10 +9,10 @@ public class Main {
         Cuptor c2 = new Cuptor(160, 220.90f);
         
         c1.setTimpGatire(180);
-        c1.setGradGatire(180.90f);
+        c1.setGradeGatire(180.90f);
         
         System.out.println(c1.getTimpGatire());
-        System.out.println(c1.getGradGatire());
+        System.out.println(c1.getGradeGatire());
         
     }
 }
