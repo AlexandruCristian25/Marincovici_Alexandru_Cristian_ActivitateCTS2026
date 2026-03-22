@@ -21,7 +21,7 @@ public class Autobuz implements Prototype {
             
         }
         
-        if(nrLocuri.length() == 0) {
+        if(nrLocuri == 0) {
             
             this.nrLocuri = nrLocuri;
             
@@ -46,5 +46,9 @@ public class Autobuz implements Prototype {
         return (Autobuz) super.clone();
         
     }
-    
+
+    @Override
+    public Prototype copie() {
+        return null;
+    }
 }
