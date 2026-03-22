@@ -2,9 +2,10 @@ package ro.ase.cts.Firma;
 
 public class Firma {
     
-    private String numeCompanie;
-    private int nrAngajati;
-    private String locatie;
+    private static String numeCompanie;
+    private static int nrAngajati;
+    private static String locatie;
+    private static Firma instance = null;
     
     private Firma(String numeCompanie, int nrAngajati, String locatie) {
         
@@ -16,19 +17,19 @@ public class Firma {
     
     public String getNumeCompanie() {
         
-        this.numeCompanie = numeCompanie;
+        return this.numeCompanie;
         
     }
     
     public void setNumeCompanie(String numeCompanie) {
         
-        this.numeCompanie = numeCompanieNoua;
+        this.numeCompanie = numeCompanie;
         
     }
     
-    public String getNrAngajati() {
+    public int getNrAngajati() {
         
-        this.nrAngajati = nrAngajati;
+        return this.nrAngajati;
         
     }
     
@@ -40,8 +41,9 @@ public class Firma {
     
     public String getLocatie() {
         
-        this.locatie = locatie;
-        
+        return this.locatie;
+
+
     }
     
     public void setLocatie(String locatie) {
@@ -52,14 +54,14 @@ public class Firma {
     
     public static synchronized Firma getInstance() {
         
-        if(instance != null) {
+        if(instance == null) {
             
-            instance = new Firma(numeFirma, nrAngajati, locatie);
+            instance = new Firma(numeCompanie, nrAngajati, locatie);
             
         }
         
         return instance;
         
     }
-    
+
 }
