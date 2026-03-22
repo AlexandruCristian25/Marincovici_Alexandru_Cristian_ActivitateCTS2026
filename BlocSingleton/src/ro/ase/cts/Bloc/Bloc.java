@@ -2,8 +2,8 @@ package ro.ase.cts.Bloc;
 
 public class Bloc {
     
-    private String numeBloc;
-    private int nrApartamente;
+    private static String numeBloc;
+    private static int nrApartamente;
     private static Bloc instance = null;
     
     private Bloc(String numeBloc, int nrApartamente) {
@@ -15,19 +15,19 @@ public class Bloc {
     
     public String getNumeBloc() {
         
-        this.numeBloc = numeBloc;
+        return this.numeBloc;
         
     }
     
     public void setNumeBloc(String numeBloc) {
-        
-        
-        this.numeBloc = numeBlocNou;
+
+        this.numeBloc = numeBloc;
+
     }
     
-    public String getNrApartamente() {
+    public int getNrApartamente() {
         
-        this.nrApartamente = nrApartamente;
+        return this.nrApartamente;
         
     }
     
@@ -39,7 +39,7 @@ public class Bloc {
     
     public static synchronized Bloc getInstance() {
         
-        if(instance != null) {
+        if(instance == null) {
             
             instance = new Bloc(numeBloc, nrApartamente);
             
