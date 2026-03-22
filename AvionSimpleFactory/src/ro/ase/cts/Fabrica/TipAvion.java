@@ -1,4 +1,4 @@
-package ro.ase.cts.Fabrica;
+package ro.ase.cts.Avion;
 
 public enum TipAvion {
     
