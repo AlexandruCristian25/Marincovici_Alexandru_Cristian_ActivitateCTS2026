@@ -2,8 +2,8 @@ package ro.ase.cts.Autor;
 
 public class Autor {
     
-    private String nume;
-    private int varsta;
+    private static String nume;
+    private static int varsta;
     private static Autor instance = null;
     
     private Autor(String nume, int varsta) {
@@ -25,7 +25,7 @@ public class Autor {
         
     }
     
-    public String getVarsta() {
+    public int getVarsta() {
         
         return this.varsta;
         
@@ -39,7 +39,7 @@ public class Autor {
     
     public static synchronized Autor getInstance() {
         
-        if(instance != null) {
+        if(instance == null) {
             
             instance = new Autor(nume, varsta);
             
