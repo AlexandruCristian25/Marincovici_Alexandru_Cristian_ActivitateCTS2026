@@ -2,8 +2,8 @@ package ro.ase.cts.Prajitura;
 
 public class Prajitura {
     
-    private String nume;
-    private double pret;
+    private static String nume;
+    private static double pret;
     private static Prajitura instance = null;
     
     private Prajitura(String nume, double pret) {
@@ -15,31 +15,31 @@ public class Prajitura {
     
     public String getNume() {
         
-        this.nume = nume;
+        return this.nume;
         
     }
     
     public void setNume(String nume) {
         
-        this.nume = numeNou;
+        this.nume = nume;
         
     }
     
-    public String getPret() {
+    public double getPret() {
         
-        this.pret = pret;
+        return this.pret;
         
     }
     
     public void setPret(double pret) {
         
-        this.pret = pretNou;
+        this.pret = pret;
         
     }
     
     public static synchronized Prajitura getInstance() {
         
-        if(instance != null) {
+        if(instance == null) {
             
             instance = new Prajitura(nume, pret);
             
