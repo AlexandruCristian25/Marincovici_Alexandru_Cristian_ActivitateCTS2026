@@ -1,6 +1,6 @@
 package ro.ase.cts.Main;
 
-package ro.ase.cts.Autor.Autor;
+import ro.ase.cts.Autor.Autor;
 
 public class Main {
     public static void main(String[] args) {
