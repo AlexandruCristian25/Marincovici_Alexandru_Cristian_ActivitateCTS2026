@@ -5,16 +5,14 @@ public class FructBuilder {
     private String numeFrunct;
     private double greutate;
     private String culoare;
-    
-    private FructBuilder(String numeFruct, double greutate, String culoare) {
-        
-        this.numeFruct = numeFruct;
+
+    private FructBuilder(String numeFrunct, double greutate, String culoare) {
+        this.numeFrunct = numeFrunct;
         this.greutate = greutate;
         this.culoare = culoare;
-        
     }
-    
-    public static class FructBuilder implements BuilderAbstract {
+
+    public static class FructBuilder1 implements BuilderAbstract {
         
         private String numeFrunct;
         private double greutate;
@@ -23,7 +21,7 @@ public class FructBuilder {
         @Override
         public BuilderAbstract setNumeFruct(String numeFruct) {
             
-            this.numeFruct = numeFruct;
+            this.numeFrunct = numeFruct;
             return this;
             
         }
@@ -47,7 +45,7 @@ public class FructBuilder {
         @Override
         public FructBuilder build() {
             
-            return new FructBuilder(numeFruct, greutate, culoare);
+            return new FructBuilder(numeFrunct, greutate, culoare);
             
         }
         
@@ -57,7 +55,7 @@ public class FructBuilder {
     public String toString() {
         
         final StringBuilder sb = new StringBuilder("Fruct{");
-        sb.append("numeFruct='").append(numeFruct).append('\'');
+        sb.append("numeFruct='").append(numeFrunct).append('\'');
         sb.append(", greutate='").append(greutate).append('\'');
         sb.append(", culoare='").append(culoare);
         sb.append('{');
@@ -65,5 +63,10 @@ public class FructBuilder {
         return sb.toString();
         
     }
-    
+
+    public static class Builder {
+        public BuilderAbstract setCuloare(String rosu) {
+            return null;
+        }
+    }
 }
