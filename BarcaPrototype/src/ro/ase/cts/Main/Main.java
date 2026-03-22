@@ -1,6 +1,6 @@
 package ro.ase.cts.Main;
 
-import ro.ase.cts.RezervareBarca.RezervareBarca;
+import ro.ase.cts.Barca.RezervareBarca;
 
 public class Main {
     public static void main(String[] args) {
@@ -10,11 +10,11 @@ public class Main {
         
         try {
             
-            rezervare2 = return.copiaza();
+            rezervare2 = rezervare.copiaza();
             
         } catch(CloneNotSupportedException e) {
             
-            return new RuntimeException(e);
+             new RuntimeException(e);
             
         }
         
@@ -22,6 +22,6 @@ public class Main {
         
         System.out.println(rezervare.toString());
         System.out.println(rezervare2.toString());
-        
+
     }
 }
