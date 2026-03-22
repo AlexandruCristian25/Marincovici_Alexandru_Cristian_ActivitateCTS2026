@@ -12,7 +12,7 @@ public class Biserica {
         
     }
     
-    public static class Biserica implements BuilderAbstract {
+    public static class Biserica1 implements BuilderAbstract {
         
         private String nume;
         private String locatie;
@@ -53,5 +53,10 @@ public class Biserica {
         return sb.toString();
         
     }
-    
+
+    public static class Builder {
+        public BuilderAbstract setNume(String s) {
+            return null;
+        }
+    }
 }
