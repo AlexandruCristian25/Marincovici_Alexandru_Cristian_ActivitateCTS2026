@@ -2,11 +2,11 @@ package ro.ase.cts.Vacanta;
 
 public abstract class Vacanta {
     
-    private String locatie;
-    private double pret;
-    private int nrPersoane;
+    protected String locatie;
+    protected double pret;
+    protected int nrPersoane;
     
-    private Vacanta(String locatie, double pret, int nrPersoane) {
+    public Vacanta(String locatie, double pret, int nrPersoane) {
         
         this.locatie = locatie;
         this.pret = pret;
@@ -15,5 +15,5 @@ public abstract class Vacanta {
     }
     
     public abstract void afiseazaInfo();
-    
+
 }

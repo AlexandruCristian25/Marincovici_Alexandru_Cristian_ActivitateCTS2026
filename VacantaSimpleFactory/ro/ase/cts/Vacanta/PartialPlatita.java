@@ -1,6 +1,6 @@
 package ro.ase.cts.Vacanta;
 
-public class PartialPlatita {
+public class PartialPlatita extends Vacanta{
     
     public PartialPlatita(String locatie, double pret, int nrPersoane) {
         
@@ -11,12 +11,12 @@ public class PartialPlatita {
     @Override
     public void afiseazaInfo() {
         
-        StringBuider sb = new StringBuilder();
+        StringBuilder sb = new StringBuilder();
         sb.append("Locatie vacanta: Locatie: ").append(locatie);
         sb.append("Pret: ").append(pret);
         sb.append("Nr persoane: ");
         
-        System.out.pritnln(sb.toString());
+        System.out.println(sb.toString());
         
     }
     
