@@ -1,6 +1,6 @@
 package ro.ase.cts.Produs;
 
-public class RezervareProdus {
+public class RezervareProdus implements Cloneable {
     
     private String nume;
     private int nrExemplare;
@@ -21,13 +21,13 @@ public class RezervareProdus {
             
         }
         
-        if(nrExemplare.length() > 1) {
+        if(nrExemplare > 1) {
             
             this.nrExemplare = nrExemplare;
             
         } else {
             
-            this.nrExemplare = "0";
+            this.nrExemplare = 0;
             
         }
         
@@ -60,7 +60,7 @@ public class RezervareProdus {
     
     public RezervareProdus copiaza() throws CloneNotSupportedException {
         
-        return (RezervareProdus) super.copiaza();
+        return (RezervareProdus) super.clone();
         
     }
     
