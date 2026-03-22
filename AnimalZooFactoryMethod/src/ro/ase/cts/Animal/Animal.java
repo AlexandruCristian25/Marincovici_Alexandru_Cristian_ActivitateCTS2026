@@ -1,11 +1,11 @@
 package ro.ase.cts.Animal;
 
-public class Animal {
+public abstract class Animal {
     
-    private String nume;
-    private int nrExemplare;
+    protected String nume;
+    protected int nrExemplare;
     
-    private Animal(String nume, int nrExemplare) {
+    public Animal(String nume, int nrExemplare) {
         
         this.nume = nume;
         this.nrExemplare = nrExemplare;
