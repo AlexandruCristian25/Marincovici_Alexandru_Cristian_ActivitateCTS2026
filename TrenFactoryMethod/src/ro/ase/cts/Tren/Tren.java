@@ -1,17 +1,17 @@
 package ro.ase.cts.Tren;
 
-public class Tren {
+public abstract class Tren {
     
-    private String marca;
-    private int nrVagoane;
+    protected String marca;
+    protected int nrVagoane;
     
-    private Tren(String marca, int nrVagoane) {
+    Tren(String marca, int nrVagoane) {
         
         this.marca = marca;
         this.nrVagoane = nrVagoane;
         
     }
     
-    public static void afiseazaInfo();
+    public abstract void afiseazaInfo();
     
 }

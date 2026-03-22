@@ -8,11 +8,15 @@ public class TrenMagnetic extends Tren {
         
     }
     
-    @Ovwrride
+    @Override
     public void afiseazaInfo() {
-        
-        System.out.println("Trenul magnetic de la marca " + marca + " cu un nr de vagoane de " + nrVagoane);
-        
+
+        StringBuilder sb = new StringBuilder();
+        sb.append("Marca : ").append(marca);
+        sb.append("Nr vagoane: ").append(nrVagoane);
+
+        System.out.println(sb.toString());
+
     }
     
 }
