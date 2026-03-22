@@ -1,6 +1,6 @@
 package ro.ase.cts.Carte;
 
-public class CarteStiinta {
+public class CarteStiinta extends Carte {
     
     public CarteStiinta(String autor, int nrPagini) {
         

@@ -6,14 +6,12 @@ public class CarteFactory {
         
         return switch(tipCarte) {
             
-            case -> CarteFizica = new CarteFizica(autor, nrPagini);
-            case -> CarteMatematica = new CarteMatematica(autor, nrPagini);
-            case -> CarteStiinta = new CarteStiinta(autor, nrPagini);
+            case CarteFizica -> new CarteFizica(autor, nrPagini);
+            case CarteMatematica -> new CarteMatematica(autor, nrPagini);
+            case CarteStiinta -> new CarteStiinta(autor, nrPagini);
             default -> throw new IllegalArgumentException("Tip carte inexistenta: " + tipCarte);
             
-        }
-        
-        return null;
+        };
         
     }
     

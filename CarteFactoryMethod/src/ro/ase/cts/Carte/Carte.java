@@ -1,11 +1,11 @@
 package ro.ase.cts.Carte;
 
-public class Carte {
+public abstract class Carte {
     
-    private String autor;
-    private int nrPagini;
+    protected String autor;
+    protected int nrPagini;
     
-    private Carte(String autor, int nrPagini) {
+    Carte(String autor, int nrPagini) {
         
         this.autor = autor;
         this.nrPagini = nrPagini;
