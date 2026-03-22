@@ -21,17 +21,17 @@ public class BiletConcert implements Cloneable {
             
         }
         
-        if(pret.length() > 1) {
+        if(pret > 1) {
             
             this.pret = pret;
             
         } else {
             
-            this.pret = "0";
+            this.pret = 0;
             
         }
         
-        if(nrLoc.length() == 0) {
+        if(nrLoc == 0) {
             
             this.nrLoc = nrLoc;
             
@@ -52,13 +52,13 @@ public class BiletConcert implements Cloneable {
         sb.append("nume='").append(nume).append('\'');
         sb.append(", pret='").append(pret).append('\'');
         sb.append(", nrLoc='").append(nrLoc);
-        sb.append('{');
+        sb.append('}');
         
         return sb.toString();
         
     }
     
-    BiletConcert copiaza() throws CloneNotSupportedException {
+    public BiletConcert copiaza() throws CloneNotSupportedException {
         
         return (BiletConcert) super.clone();
         
