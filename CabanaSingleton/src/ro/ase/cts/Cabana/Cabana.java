@@ -6,7 +6,7 @@ public class Cabana {
     private int nrCamere;
     private static Cabana instance = null;
     
-    private Cabana(String locatie, int nrCamere) {
+    public Cabana(String locatie, int nrCamere) {
         
         this.locatie = locatie;
         this.nrCamere = nrCamere;
@@ -49,7 +49,7 @@ public class Cabana {
         
     }
     
-    publoc void afisareDetaliiCabana() {
+    public void afisareDetaliiCabana() {
         
         StringBuilder sb = new StringBuilder();
         sb.append(this.locatie).append(this.nrCamere);
