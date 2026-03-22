@@ -1,6 +1,8 @@
 package ro.ase.cts.Main;
 
 import ro.ase.cts.Animal.Animal;
+import ro.ase.cts.Animal.AnimalFactory;
+import ro.ase.cts.Animal.TipAnimal;
 
 public class Main {
     
