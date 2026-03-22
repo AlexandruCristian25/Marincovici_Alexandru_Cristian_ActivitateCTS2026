@@ -21,13 +21,13 @@ public class RezervareBarca implements Cloneable {
             
         }
         
-        if(nrZile.length() > 1) {
+        if(nrZile > 1) {
             
             this.nrZile = nrZile;
             
         } else {
             
-            this.nrZile = "0";
+            this.nrZile = 0;
             
         }
         
@@ -39,7 +39,7 @@ public class RezervareBarca implements Cloneable {
         
     }
     
-    private setNumePersoana(String numePersoana) {
+    public void setNumePersoana(String numePersoana) {
         
         this.numePersoana = numePersoana;
         
@@ -60,7 +60,7 @@ public class RezervareBarca implements Cloneable {
     
     public RezervareBarca copiaza() throws CloneNotSupportedException {
         
-        return new(RezervareBarca) super.clone();
+        return (RezervareBarca) super.clone();
         
     }
     
