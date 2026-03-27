@@ -5,13 +5,13 @@ import ro.ase.cts.Cabana.Menajera;
 
 public class Facade {
     
-    public static boolean verificareCamera(int nrCamera) {
+    public static boolean verificaCamera(int nrCamera) {
         
-        CameraLibera libera = new CameraLibera();
-        if(libera.verificareCameraLibera(nrCamera)) {
+        CameraLibera camera = new CameraLibera();
+        if(libera.verificaCamereLibere(nrCamera)) {
             
-            Menajera menajera = new Menajera();
-            if(menajera.esteCameraCurata(nrCamera) && menajera.areAsternuturiNoi(nrCamera)) {
+            Menajera menajeta = new Menajera();
+            if(menajera.cameraLibera(nrCamera) && menajera.esteCurata(nrCamera)) {
                 
                 return true;
                 
@@ -29,26 +29,26 @@ public class Facade {
         
     }
     
-    public static String verificareDisponibilitateCamera(int nrCamera) {
+    public static String verificaDisponibilitateCamera(int nrCamera) {
         
         CameraLibera libera = new CameraLibera();
-        if(libera.verificareCameraLibera(nrCamera)) {
+        if(libera.verificaCamereLibere(nrCamera)) {
             
             Menajera menajera = new Menajera();
-            if(menajera.esteCameraCurata(nrCamera) && menajera.areAsternuturiCurate(nrCamera)) {
+            if(menajera.cameraLibera(nrCamera) && menajera.esteCurata(nrCamera)) {
                 
-                return "Camera este curata";
+                return "Camera pregatita";
                 
             } else {
                 
-                return "Camera este in pregatire";
+                return "Camera in curs de pregatire"
                 
             }
             
         } else {
             
-            return "Camera este in pregatire";
-                
+            return "Camera in curs de pregatire";
+            
         }
         
     }

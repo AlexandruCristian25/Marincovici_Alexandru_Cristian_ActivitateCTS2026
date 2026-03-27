@@ -1,38 +1,38 @@
 package ro.ase.cts.Cabana;
 
-import java.util.Arrays;
+import java.util.ArrayList;
 import java.util.List;
 
 public class Menajera {
     
-    private List<Boolean> listaCamereCurate;
+    private List<Boolean> listaCamere;
     
     public Menajera() {
         
-        listaCamereCurate = new AreaysList<Boolean>();
+        listaCamera = new ArrayList<Boolean>();
         for(int i = 0; i < 8; i++) {
             
-            listaCamereCurate.add(true);
+            listaCamere.add(true);
             
         }
         
-        for(int i = 8; i < 13; i++) {
+        for(int i = 8; i < 14; i++) {
             
-            listaCamereCurate.add(false);
+            listaCamere.add(false);
             
         }
         
     }
     
-    public boolean esteCameraCurata(int nr) {
+    public boolean cameraLibera(int nr) {
         
-        return listaCamereCurate.get(nr);
+        return listaCamereLibere.get(nr);
         
     }
     
-    public boolean areLenjeriiCurate(int nrCamera) {
+    public boolean esteCurata(int nrCamera) {
         
-        return listaCamereCurate.get(nrCamera);
+        return listaCamereLibere.get(nrCamera);
         
     }
     
