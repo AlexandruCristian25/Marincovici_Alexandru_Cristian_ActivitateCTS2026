@@ -26,15 +26,15 @@ public class Main {
             cOferta.adaugaNod(eOfertaPaste);
             cOferta.adaugaNod(eCreazaOferta);
             
-            cFile.adaugaNod(eOpen);
-            cFile.adaugaNod(eSave);
-            cFile.adaugaNod(cCamere);
-            cFile.adaugaNod(cOferta);
+            cFisier.adaugaNod(eOpen);
+            cFisier.adaugaNod(eSave);
+            cFisier.adaugaNod(cCamere);
+            cFisier.adaugaNod(cOferta);
             
-            cFile.stergeNod(eSave);
-            cOferte.adaugaNod(eSave);
+            cFisier.stergeNod(eSave);
+            cOferta.adaugaNod(eSave);
             
-            cFile.descriere();
+            cFisier.descriere();
             
         } catch(Exception e) {
             
