@@ -3,14 +3,14 @@ package ro.ase.cts.Agentie;
 public class Element implements Optiune {
     
     private String nume;
-    public Item(String nume) {
+    public Element(String nume) {
         
         this.nume = nume;
         
     }
     
     @Override
-    public void StergeNod(Optiune optiune) throws Exception {
+    public void stergeNod(Optiune optiune) throws Exception {
         
         throw new Exception("Implementare neefectuata");
         
