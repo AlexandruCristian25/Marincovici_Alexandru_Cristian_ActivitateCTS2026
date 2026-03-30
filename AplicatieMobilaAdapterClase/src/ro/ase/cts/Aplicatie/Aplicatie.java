@@ -39,7 +39,7 @@ public class Aplicatie {
     @Override
     public String toString() {
         
-        return "Aplicatie [nume= " + nume + " dimensiune= " + dimensiune + "]");
+        return "Aplicatie [nume= " + nume + " dimensiune= " + dimensiune + "]";
         
     }
     
