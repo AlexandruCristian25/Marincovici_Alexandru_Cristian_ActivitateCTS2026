@@ -9,31 +9,23 @@ public class Producator {
     
     public Producator() {
         
-        listaJocuri = new AreayList<Boolean>();
+        listaJocuri = new ArrayList<Boolean>();
+        
         for(int i = 0; i < 4; i++) {
-            
             listaJocuri.add(true);
-            
         }
         
         for(int i = 4; i < 9; i++) {
-            
             listaJocuri.add(false);
-            
         }
-        
     }
     
     public boolean jocNou(int pret) {
-        
-        return listaJocuri.get(pret);
-        
+        return listaJocuri.get(pret - 1);
     }
     
     public boolean jocVechi(int pret) {
-        
-        return listaJocuri.get(pret);
-        
+        return !listaJocuri.get(pret - 1);
     }
     
 }
