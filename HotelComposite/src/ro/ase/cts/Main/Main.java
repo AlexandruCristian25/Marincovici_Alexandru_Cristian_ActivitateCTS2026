@@ -20,27 +20,26 @@ public class Main {
         
         try {
             
-            cCamere.adaugaRezervare(iVizualizare);
-            cCamere.adaugaRezervare(iEditare);
+            rCamere.adaugaRezervare(iVizualizare);
+            rCamere.adaugaRezervare(iEditare);
             
-            cOferta.adaugaNod(iOferta);
-            cOferta.adaugaNod(iCreazaOferta);
+            rOferta.adaugaRezervare(iOferta);
+            rOferta.adaugaRezervare(iCreareOferta);
             
-            cFisier.adaugaNod(iOpen);
-            cFisier.adaugaNod(iSave);
-            cFisier.adaugaNod(cCamere);
-            cFisier.adaugaNod(cOferta);
+            rFisier.adaugaRezervare(iOpen);
+            rFisier.adaugaRezervare(iSave);
+            rFisier.adaugaRezervare(rCamere);
+            rFisier.adaugaRezervare(rOferta);
             
-            cFisier.stergeNod(iSave);
-            cOferta.adaugaNod(iSave);
+            rFisier.stergeRezervare(iSave);
+            rOferta.adaugaRezervare(iSave);
             
-            cFile.deecriere();
+            rFisier.info();
             
         } catch(Exception e) {
-            
             e.printStackTrace();
-            
         }
         
     }
+    
 }
