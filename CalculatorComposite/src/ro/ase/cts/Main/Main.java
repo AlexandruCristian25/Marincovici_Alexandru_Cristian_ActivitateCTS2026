@@ -1,8 +1,8 @@
 package ro.ase.cts.Main;
 
-import Calculator.Calculator.Categorie;
-import Calculator.Calculator.Element;
-import Calculator.Calculator.Optiune;
+import ro.ase.cts.Calculator.Categorie;
+import ro.ase.cts.Calculator.Element;
+import ro.ase.cts.Calculator.Optiune;
 
 public class Main {
     
@@ -11,8 +11,10 @@ public class Main {
         Optiune cModel = new Categorie("Model");
         Optiune cRAM = new Categorie("RAM");
         Optiune cPret = new Categorie("Pret");
+        Optiune cCalculator = new Categorie("Calculator");
+        Optiune cOferta = new Categorie("Oferta");
         
-        Optiune iDeschis = new Element("Deschis");
+        Optiune iDeschidere = new Element("Deschidere");
         Optiune iSalvare = new Element("Salvare");
         Optiune iVizualizare = new Element("Vizualizare componente");
         Optiune iEditare = new Element("Editare componente");
@@ -25,7 +27,7 @@ public class Main {
             cCalculator.adaugaNod(iEditare);
             
             cCalculator.adaugaNod(iOferta);
-            cCalculator.adaugaNod(iCreazaPC);
+            cCalculator.adaugaNod(iCreeazaPC);
             
             cModel.adaugaNod(iDeschidere);
             cModel.adaugaNod(iSalvare);
@@ -38,11 +40,8 @@ public class Main {
             cModel.descriere();
             
         } catch(Exception e) {
-            
             e.printStackTrace();
-            
         }
         
     }
-    
 }
