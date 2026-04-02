@@ -12,7 +12,7 @@ public class Main {
         
         Decorator cameraDecorata = new CameraDecorata(camera);
         
-        cameraDecorata.aplicaDoscount(20);
+        cameraDecorata.aplicaDiscount(20);
         cameraDecorata.afiseazaDetalii();
         
     }
