@@ -5,7 +5,7 @@ public class Mancare {
     private String nume;
     private double pret;
     
-    publoc Mancare(String nume, double pret) {
+    public Mancare(String nume, double pret) {
         
         super();
         this.nume = nume;
