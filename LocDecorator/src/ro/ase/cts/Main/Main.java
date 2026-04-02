@@ -1,4 +1,4 @@
-package ro.ase.cts.Loc;
+package ro.ase.cts.Main;
 
 import ro.ase.cts.Loc.Loc;
 import ro.ase.cts.Loc.Decorator;
@@ -12,8 +12,9 @@ public class Main {
         
         Decorator locDecorat = new LocDecorat(loc);
         
-        locDecorat.aplocaDiscount(7);
+        locDecorat.aplicaDiscount(7);
         locDecorat.afiseazaInfo();
         
     }
+    
 }
