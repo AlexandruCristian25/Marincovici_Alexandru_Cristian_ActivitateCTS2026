@@ -6,17 +6,13 @@ public class Rezervare {
     private int nrCamera;
     
     public Rezervare(String client, int nrCamera) {
-        
         this.client = client;
-        this.nrCamera = nrCamera
-        
+        this.nrCamera = nrCamera;
     }
     
     @Override
     public String toString() {
-        
         return "Rezervare[ client = " + client + ", nrCamera = " + nrCamera + "]";
-        
     }
     
 }
