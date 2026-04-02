@@ -2,7 +2,7 @@ package ro.ase.cts.Main;
 
 import ro.ase.cts.Laptop.LaptopGaming;
 import ro.ase.cts.Laptop.LaptopOffice;
-import ro.ase.cts.Laptop.LaptopHome;
+import ro.ase.cts.Laptop.Programator;
 
 public class Main {
     public static void main(String[] args) {
@@ -16,4 +16,5 @@ public class Main {
         programator.utilizeaza(8);
         
     }
+    
 }
