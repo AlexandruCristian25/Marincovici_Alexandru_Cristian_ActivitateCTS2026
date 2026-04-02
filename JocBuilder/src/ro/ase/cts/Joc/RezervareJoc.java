@@ -13,19 +13,19 @@ public class RezervareJoc extends BuilderAbstract {
     }
 
     @Override
-    public BuilderAbstract adaugaScut() {
+    public RezervareJoc adaugaScut() {
         this.scut = true;
         return this;
     }
 
     @Override
-    public BuilderAbstract adaugaArma() {
+    public RezervareJoc adaugaArma() {
         this.arma = true;
         return this;
     }
 
     @Override
-    public BuilderAbstract adaugaMagie() {
+    public RezervareJoc adaugaMagie() {
         this.magie = true;
         return this;
     }
@@ -43,4 +43,5 @@ public class RezervareJoc extends BuilderAbstract {
                 ", magie=" + magie +
                 '}';
     }
+    
 }
