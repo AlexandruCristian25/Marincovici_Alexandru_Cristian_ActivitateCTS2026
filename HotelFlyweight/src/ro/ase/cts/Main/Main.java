@@ -1,8 +1,8 @@
 package ro.ase.cts.Main;
 
 import ro.ase.cts.Hotel.ICamera;
-import ro.ase.cts.Hotel.Camera;
 import ro.ase.cts.Hotel.CameraFactory;
+import ro.ase.cts.Hotel.Rezervare;
 
 public class Main {
     public static void main(String[] args) {
@@ -19,4 +19,5 @@ public class Main {
         factory.getCamera(3).tipareste(rezervareMihaela);
         
     }
+    
 }
