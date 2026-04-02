@@ -1,18 +1,21 @@
 package ro.ase.cts.Main;
 
-import ro.ase.cts.Companie.ICompanie;
 import ro.ase.cts.Companie.Companie;
+import ro.ase.cts.Companie.ICompanie;
 import ro.ase.cts.Companie.CompanieProxy;
+import ro.ase.cts.Companie.TipCompanie;
 
 public class Main {
     public static void main(String[] args) {
         
-        Companie companie = new Companie("Bitdifender", "Locatie 1");
-        ICompanie iCompanie = new ICompanie(companie);
+        Companie companie = new Companie("Bitdefender", "Locatie 1");
+        
+        ICompanie iCompanie = new TipCompanie(companie);
         iCompanie.creazaBirou();
         
-        CompanieProxy iCompanieProxy = new CompanieProxy(companie);
+        ICompanie iCompanieProxy = new CompanieProxy(companie);
         iCompanieProxy.creazaBirou();
         
     }
+    
 }
