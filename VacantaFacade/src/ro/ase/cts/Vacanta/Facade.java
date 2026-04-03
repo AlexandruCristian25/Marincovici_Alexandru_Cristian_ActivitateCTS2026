@@ -2,30 +2,6 @@ package ro.ase.cts.Vacanta;
 
 public class Facade {
     
-    public static booleam verificarePretPachet(double pret) {
-        
-        PachetVacanta pachet = new PachetVacanta();
-        if(pachet.verificarePretPachet(double pret)) {
-            
-            Vacanta vacanta = new Vacanta();
-            if(vacanta.rezervarePachet(pret) && vacanta.areDiscount(pret)) {
-                
-                return true;
-                
-            } else {
-                
-                return false;
-                
-            }
-            
-        } else {
-            
-            return false;
-            
-        }
-        
-    }
-    
     public static String verificarePretPachet(double pret) {
         
         Destinatie destinatie = new Destinatie();
@@ -45,7 +21,6 @@ public class Facade {
         } else {
             
             return "Rezervare incompleta";
-            
         }
         
     }

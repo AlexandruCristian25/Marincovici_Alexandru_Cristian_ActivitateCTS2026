@@ -1,6 +1,6 @@
-package ro.aze.cts.Vacanta;
+package ro.ase.cts.Vacanta;
 
-import java.util.Arrays;
+import java.util.ArrayList;
 import java.util.List;
 
 public class Vacanta {
@@ -10,6 +10,7 @@ public class Vacanta {
     public Vacanta() {
         
         listaPacheteVacanta = new ArrayList<Boolean>();
+        
         for(int i = 0; i < 10; i++) {
             
             listaPacheteVacanta.add(true);
@@ -24,15 +25,33 @@ public class Vacanta {
         
     }
     
-    public boolean rezervarePachet(String nume) {
+    public boolean rezervarePachet(double pret) {
         
-        return listaPacheteVacanta.get(nume);
+        int index = (int) pret;
+        if(index >= 0 && index < listaPacheteVacanta.size()) {
+            
+            return listaPacheteVacanta.get(index);
+            
+        } else {
+            
+            return false;
+            
+        }
         
     }
     
     public boolean areDiscount(double pret) {
         
-        return listaPacheteVacanta.get(pret);
+        int index = (int) pret;
+        if(index >= 0 && index < listaPacheteVacanta.size()) {
+            
+            return listaPacheteVacanta.get(index);
+            
+        } else {
+            
+            return false;
+            
+        }
         
     }
     
