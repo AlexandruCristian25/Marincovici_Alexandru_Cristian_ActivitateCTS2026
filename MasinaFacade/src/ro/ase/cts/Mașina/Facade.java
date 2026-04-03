@@ -5,7 +5,7 @@ import ro.ase.cts.Masina.Masina;
 
 public class Facade {
     
-    public static boolean verificareMasina(String tipCamera) {
+    public static boolean verificareMasina(String tipMasina) {
         
         Masina masina = new Masina();
         if(masina.verificareMasina(tipMasina)) {
@@ -29,7 +29,7 @@ public class Facade {
         
     }
     
-    public static String verificareMasina(String tipMasina) {
+    public static String verificareMasinaMesaj(String tipMasina) {
         
         Masina masina = new Masina();
         if(masina.verificareMasina(tipMasina)) {

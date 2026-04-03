@@ -12,7 +12,7 @@ public class Masina {
         listaMasini = new ArrayList<String>();
         for(int i = 0; i < 15; i++) {
             
-            listaMasini.add(i + 1);
+            listaMasini.add(String.valueOf(i + 1));
             
         }
         
@@ -20,7 +20,7 @@ public class Masina {
     
     public boolean verificareMasina(String tipMasina) {
         
-        return listaMasini.contains(tipCamera);
+        return listaMasini.contains(tipMasina);
         
     }
     

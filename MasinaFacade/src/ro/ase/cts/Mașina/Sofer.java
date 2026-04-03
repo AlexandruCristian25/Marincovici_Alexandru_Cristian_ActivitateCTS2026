@@ -25,15 +25,13 @@ public class Sofer {
     }
     
     public boolean esteMasinaNoua(String tip) {
-        
-        return listaMasini.get(tip);
-        
+        int index = Integer.parseInt(tip) - 1;
+        return listaMasini.get(index);
     }
     
     public boolean areRotiNoi(String tipMasina) {
-        
-        return listaMasini.get(tipMasina);
-        
+        int index = Integer.parseInt(tipMasina) - 1;
+        return listaMasini.get(index);
     }
     
 }
