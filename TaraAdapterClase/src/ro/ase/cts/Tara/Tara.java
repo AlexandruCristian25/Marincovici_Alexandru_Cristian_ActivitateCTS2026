@@ -1,46 +1,23 @@
 package ro.ase.cts.Tara;
 
-public class Tara {
-    
+public class Tara implements ITara {
+
     private String nume;
-    private int nrZile;
-    
-    public Tara(String nume, int nrZile) {
-        
+    private int populatie;
+
+    public Tara(String nume, int populatie) {
         this.nume = nume;
-        this.nrZile = nrZile;
-        
+        this.populatie = populatie;
     }
-    
-    public String getNume() {
-        
-        return nume;
-        
-    }
-    
-    public void setNume(String nume) {
-        
-        this.nume = nume;
-        
-    }
-    
-    public int getNrZile() {
-        
-        return nrZile;
-        
-    }
-    
-    public void setNrZile(int nrZile) {
-        
-        this.nrZile = nrZile;
-        
-    }
-    
+
     @Override
-    public String toString() {
-        
-        return "Tara [nume=" + nume + ", nrZile=" + nrZile + "]";
-        
+    public void afiseazaTara() {
+        System.out.println("Tara: " + nume);
+    }
+
+    @Override
+    public void afiseazaPopulatie() {
+        System.out.println("Populatie: " + populatie);
     }
     
 }
