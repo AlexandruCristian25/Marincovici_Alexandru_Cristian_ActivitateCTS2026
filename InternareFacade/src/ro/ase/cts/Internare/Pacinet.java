@@ -6,27 +6,21 @@ public class Pacinet implements IInternare {
     private String nrTelefon;
     private String adresa;
     
-    public Pacient(String nume, String nrTelefon, String adresa) {
+    public Pacinet(String nume, String nrTelefon, String adresa) { // FIX constructor
         
-        super();
         this.nume = nume;
         this.nrTelefon = nrTelefon;
         this.adresa = adresa;
-        
     }
     
     @Override
     public void info(Pacient pacient) {
-        
-        System.out.println(this.toString() + " " + pacient.toString());
-        
+        System.out.println(this.toString() + " " + pacient);
     }
     
     @Override
     public String toString() {
-        
-        return "Pacient [nume=" + nume + ", nrTelefon=" + nrTelefon + ", email=" + email + "]";
-        
+        return "Pacient [nume=" + nume + ", nrTelefon=" + nrTelefon + ", adresa=" + adresa + "]";
     }
     
 }

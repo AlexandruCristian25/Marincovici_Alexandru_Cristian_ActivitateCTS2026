@@ -1,4 +1,4 @@
-package ro.ase.cts.Internate;
+package ro.ase.cts.Internare;
 
 import java.util.HashMap;
 
@@ -7,12 +7,10 @@ public class PacientFactory {
     private HashMap<Integer, Salon> listaSaloane;
     
     public PacientFactory() {
-        
         listaSaloane = new HashMap<Integer, Salon>();
-        
     }
     
-    public IInternare getPacient(String nume) {
+    public Salon getPacient(int nrSalon) {
         
         if(listaSaloane.containsKey(nrSalon)) {
             
@@ -20,8 +18,8 @@ public class PacientFactory {
             
         } else {
             
-            IInternare salon = new Salon(nrSalon, 12, 20);
-            listaSaloane.put(nrSalon, (Salon) salon);
+            Salon salon = new Salon(nrSalon, 12);
+            listaSaloane.put(nrSalon, salon);
             return salon;
             
         }
