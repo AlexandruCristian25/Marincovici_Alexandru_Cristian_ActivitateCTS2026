@@ -17,7 +17,7 @@ public class Autocar {
         
     }
     
-    public String getNrLocuri() {
+    public int getNrLocuri() {
         
         return nrLocuri;
         
