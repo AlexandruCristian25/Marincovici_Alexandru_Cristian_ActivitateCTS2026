@@ -14,9 +14,9 @@ public class Masina implements IMasina {
     }
     
     @Override
-    public void afiseazaInfo() {
+    public void afiseazaInfo(Rezervare rezervare) {
         
-        System.out.println(this.toString() + rezervare.toString());
+        System.out.println(this.toString() + " " + rezervare.toString());
         
     }
     

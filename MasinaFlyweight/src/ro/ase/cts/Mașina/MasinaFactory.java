@@ -1,14 +1,15 @@
 package ro.ase.cts.Masina;
 
 import java.util.HashMap;
+import java.util.Map;
 
 public class MasinaFactory {
     
-    private List<Integer, Masina> listaMasini;
+    private Map<Integer, Masina> listaMasini;
     
     public MasinaFactory() {
         
-        listaMasini = new HashMap<Integer,Masina>();
+        listaMasini = new HashMap<Integer, Masina>();
         
     }
     

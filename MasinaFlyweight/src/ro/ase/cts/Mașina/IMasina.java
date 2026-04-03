@@ -2,6 +2,6 @@ package ro.ase.cts.Masina;
 
 public interface IMasina {
     
-    void afiseazaInfo();
+    void afiseazaInfo(Rezervare rezervare);
     
 }
