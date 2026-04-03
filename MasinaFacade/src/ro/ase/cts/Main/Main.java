@@ -8,7 +8,7 @@ public class Main {
     
     public static void main(String[] args) {
         
-        String tipMasina = "Noua";
+        String tipMasina = "1";
         
         System.out.println(Facade.verificareMasina(tipMasina));
         
