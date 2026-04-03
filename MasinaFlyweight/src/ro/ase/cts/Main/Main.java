@@ -1,4 +1,4 @@
-package ro.ase.cts.Masina;
+package ro.ase.cts.Main;
 
 import ro.ase.cts.Masina.MasinaFactory;
 import ro.ase.cts.Masina.IMasina;
@@ -19,4 +19,5 @@ public class Main {
         factory.getMasina(3500).afiseazaInfo(rezervareMihai);
         
     }
+    
 }
