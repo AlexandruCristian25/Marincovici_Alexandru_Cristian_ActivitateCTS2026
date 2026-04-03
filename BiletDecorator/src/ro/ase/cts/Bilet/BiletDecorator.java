@@ -1,20 +1,15 @@
 package ro.ase.cts.Bilet;
 
-import ro.ase.cts.Factura.Factura;
+public class BiletDecorat extends Decorator {
 
-public class BiletDecorator extends Decorator {
-    
-    public BiletDecorator(Bilet bilet) {
-        
+    public BiletDecorat(IBilet bilet) {
         super(bilet);
-        
     }
-    
-    @Overide
-    public void aplicareDiscount(int procent) {
-        
-        super.bilet.setNume(super.bilet.getNume() * (100 - procent) / 100);
-        
+
+    @Override
+    public void afisareBilet() {
+        super.afisareBilet();
+        System.out.println("Biletul include acces VIP");
     }
     
 }
