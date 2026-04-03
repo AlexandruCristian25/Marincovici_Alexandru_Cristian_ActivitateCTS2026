@@ -1,22 +1,23 @@
 package ro.ase.cts.Main;
 
-import ro.ase.cts.IRestaurant;
-import ro.ase.cts.Rezervare;
-import ro.ase.cts.RestaurantFactory;
+import ro.ase.cts.Restaurant.IRestaurant;
+import ro.ase.cts.Restaurant.Rezervare;
+import ro.ase.cts.Restaurant.RestaurantFactory;
 
 public class Main {
     public static void main(String[] args) {
-        
+
         Rezervare rezervareIonescu = new Rezervare("Ionescu", "13:00");
         Rezervare rezervarePopescu = new Rezervare("Popescu", "09:00");
         Rezervare rezervareAlex = new Rezervare("Alex", "21:00");
-        
-        RestaurantFactory factory = new RestaurantFavtory();
-        
+
+        RestaurantFactory factory = new RestaurantFactory();
+
         IRestaurant restaurant2 = factory.getRestaurant("Gigel");
         restaurant2.tipareste(rezervareIonescu);
         factory.getRestaurant("Popescu").tipareste(rezervarePopescu);
         factory.getRestaurant("Alex").tipareste(rezervareAlex);
         
     }
+    
 }
