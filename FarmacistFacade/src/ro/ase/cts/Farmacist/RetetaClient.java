@@ -12,7 +12,6 @@ public class RetetaClient {
         this.card = card;
     }
     
-    // FIX: tip de retur lipsă
     public CardSanatate getCard() {
         return card;
     }
