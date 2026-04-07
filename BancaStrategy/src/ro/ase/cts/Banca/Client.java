@@ -32,7 +32,7 @@ public class Client {
     
     public Client(String nume) {
         this.nume = nume;
-        this.metodaPlata = new Cash(); // default
+        this.metodaPlata = new Cash();
     }
     
 }
